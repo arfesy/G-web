@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>G-Web | Diseño Web y Catálogos Digitales en Argentina</title>
+    <meta name="description" content="Potenciamos tu negocio con sitios web modernos, rápidos y optimizados para vender.">
+
+    <meta property="og:title" content="G-Web | Sitios Web Profesionales">
+    <meta property="og:description" content="¿Tu negocio todavía no está en internet? Creamos tu landing page o catálogo digital hoy mismo.">
+    <meta property="og:image" content="G-web (logo) transparente.png">
+    <meta property="og:url" content="https://gweb.ar">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="G-web (logo) transparente.png" type="image/png">
+
+    <style>
+        :root {
+            --primary: #0099ff; 
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Suaviza el scroll al hacer clic en enlaces internos */
+        html { scroll-behavior: smooth; }
+
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 1.2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-img {
+            height: 60px;
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .logo-img:hover { transform: scale(1.1); }
+
+        h1 { font-size: 1.8rem; letter-spacing: 1px; }
+        h1 span { color: var(--primary); }
+
+        .hero {
+            padding: 8rem 2rem;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; color: #cbd5e1; }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--primary);
+        }
+
+        .card:hover { 
+            transform: translateY(-12px); 
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 { color: var(--dark); margin-bottom: 1rem; font-size: 1.5rem; }
+        .card p { color: var(--gray); font-size: 1rem; }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            border-radius: 50px; 
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3);
+        }
+
+        .cta-button:hover { 
+            background: #0080d6; 
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 153, 255, 0.4);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p { margin-bottom: 0.5rem; }
+        footer .brand-footer { color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+        .social-note { font-size: 0.85rem; color: var(--gray); margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="G-web (logo) transparente.png" alt="G-Web Logo" class="logo-img">
+        <h1>G-WEB<span>.AR</span></h1>
+    </header>
+
+    <section class="hero">
+        <h2>¿Tu negocio todavía no está en internet?</h2>
+        <p>Creamos sitios web modernos, de alta velocidad y optimizados para convertir visitantes en clientes reales.</p>
+        <a href="https://wa.me/5492284507625" class="cta-button" target="_blank">Empezar mi proyecto</a>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="card">
+            <h3>Landing Pages</h3>
+            <p>Páginas de alto impacto diseñadas para una sola misión: vender. Ideales para lanzamientos y campañas publicitarias.</p>
+        </div>
+        <div class="card">
+            <h3>Sitios Corporativos</h3>
+            <p>Presencia profesional y elegante para tu empresa. Diseño responsive que se adapta a cualquier dispositivo.</p>
+        </div>
+        <div class="card">
+            <h3>Catálogos Digitales</h3>
+            <p>Mostrá tus productos de forma profesional. Una experiencia de compra clara para que tus clientes te elijan siempre.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="brand-footer">G-WEB.AR</p>
+        <p>&copy; 2026 - Olavarría, Argentina</p>
+        <p class="social-note">Seguinos en Instagram y TikTok: <b>@gweb.ar</b></p>
+    </footer>
+
+</body>
+</html>
